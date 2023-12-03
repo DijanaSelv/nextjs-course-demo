@@ -41,7 +41,7 @@ function HomePage(props) {
           content="a palace to save your meetups if you want to do something like that"
         />
       </Head>
-      <MeetupList meetups={props.meetups}></MeetupList>;
+      <MeetupList meetups={props.meetups}></MeetupList>
     </Fragment>
   );
 }
