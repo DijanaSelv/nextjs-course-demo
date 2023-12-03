@@ -48,7 +48,7 @@ export async function getStaticPaths() {
 
   //this takes us to that path vo url, it puts the id in the url but does not fetch the data. Oti e vaka glupo.
   return {
-    fallback: false,
+    fallback: 'blocking',
     paths: meetups.map((meetup) => ({
       params: { meetupId: meetup._id.toString() },
     })),
