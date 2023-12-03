@@ -54,8 +54,6 @@ export async function getStaticProps() {
   //this is server side code, and usually ne mojme fetch vo server side code da klavame, ama next dozvolva. The code won't be exposed to the client, so we can directly put the code here, no need to send request to our own api route.
   //with importing mongo db next js put that code not on the client side.
 
-  MongoClient.connect();
-
   //connect to the database and collection
   const client = await MongoClient.connect(
     "mongodb+srv://dijananas:dijananas@cluster0.mket2ir.mongodb.net/meetups?retryWrites=true&w=majority"
