@@ -80,7 +80,7 @@ export async function getStaticProps() {
       })),
     },
     //revalidate unlocks a feature called incremental static generation, number of seconds next js will wait until it regenerates this page for an incoming request. it will be regenerated on the server at least in 10 seconds if there are request coming for this page.
-    revalidate: 10,
+    revalidate: 1,
   };
 }
 
